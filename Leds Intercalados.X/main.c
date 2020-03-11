@@ -30,38 +30,26 @@ void main(void)
     {
         if(S1==0 && S2==0)
         {
-        LED1=1;
+        LED1=!LED1;
         __delay_ms(500);
-        LED1=0;
-        __delay_ms(500);
-        LED2=1;
-        __delay_ms(500);
-        LED2=0;
+        LED2=!LED2;
         __delay_ms(500);
         }
         
         if(S1==1 && S2==1)
         {
-        LED1=1;
+        LED1=!LED1;
         __delay_ms(100);
-        LED1=0;
-        __delay_ms(100);
-        LED2=1;
-        __delay_ms(100);
-        LED2=0;
+        LED2=!LED2;
         __delay_ms(100);
         }
      
         if(S1==1 || S2==1)
         {
-        LED1=1;
+        LED1=!LED1;
         __delay_ms(250);
-        LED1=0;
-        __delay_ms(250);
-        LED2=1;
-        __delay_ms(250);
-        LED2=0;
-        __delay_ms(250);  
+        LED2=!LED2;
+        __delay_ms(250); 
         }    
     }
     return;
